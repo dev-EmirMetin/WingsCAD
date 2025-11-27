@@ -1,30 +1,57 @@
 # WingsCAD
-Python-based NACA airfoil generation tool with GUI
-# ✈️ WingsCAD
 
-**WingsCAD** is a Python-based CAD tool with a user-friendly GUI for generating and visualizing **NACA airfoil profiles**.  
-Developed for aerospace and aeronautical engineers, it allows real-time airfoil plotting, parameter editing, and export functionalities.
+Python-based NACA airfoil generation & visualization tool with a modern GUI.
 
----
-
-## 🚀 Features
-
-- 📐 Generate **NACA 4, 5, and 6 series** airfoils
-- 🧮 Real-time parametric profile drawing (camber, thickness, chord, etc.)
-- 🖼️ Matplotlib-based airfoil visualization
-- 💾 Export options: **CSV, SVG, PNG**
-- 🖱️ Built with PyQt5/6 for an interactive interface
-- 🔓 Fully open-source and modular
+> **WingsCAD** lets you quickly generate, inspect and export NACA airfoil geometries (4-, 5-, 6-, 7- and 8-series) with an interactive, CAD-like interface.
 
 ---
 
-## 📸 Preview (Coming Soon)
+## 🖼 Preview
 
-> Screenshots of GUI and generated airfoils will be added here
+<img width="1919" height="1030" alt="image" src="https://github.com/user-attachments/assets/6c5d4957-ac4a-4cea-8016-9b95f43e4147" />
 
 ---
 
-## 🧪 Installation
+## ✨ Features
+
+- **Multiple NACA families**
+  - NACA **4-digit**, **5-digit**, **6-series**, **7-series**, **8-series**
+  - Unified GUI: family sekmesi sadece üst şeritte değişiyor, akış bozulmuyor
+
+- **Real-time airfoil preview**
+  - Cosine-spaced coordinates for smooth leading edge
+  - Upper / lower surface + **camber line** overlay
+  - Dark, CAD-style grid (no pure white background)
+
+- **Parametric control**
+  - NACA code (e.g. 2412, 23012, 63-018…)
+  - Chord length (float)
+  - Points per surface (50–2000)
+
+- **Geometry properties panel**
+  - Max camber, camber position, thickness
+  - Max thickness location, camber magnitude
+  - Approx. area and leading-edge radius
+
+- **Export options**
+  - **Selig `.dat`** format (x, y)
+  - Simple **`.csv`** export (x,y)
+
+- **Modern GUI**
+  - Built with **PyQt5/6** and **Matplotlib**
+  - Ribbon-style top bar (family, parameters, actions, export, view, properties)
+  - Dark theme with grey–blue–red highlight colors
+  - Custom icon set designed specifically for WingsCAD
+
+- **Open-source & extensible**
+  - Clean separation between **core geometry** (`core/`) and **UI** (`wingscad_ui.py`)
+  - Easy to plug new airfoil families or analysis modules
+
+---
+
+## 📦 Installation
+
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/dev-EmirMetin/WingsCAD.git
